@@ -9,14 +9,15 @@
     header { background: #0055ff; color: white; padding: 15px; text-align: center; }
     nav { background: #0033aa; padding: 10px; text-align: center; }
     nav a { color: white; margin: 0 10px; text-decoration: none; }
-    .container { padding: 20px; }
-    .product { border: 1px solid #ccc; padding: 15px; border-radius: 10px; margin-bottom: 20px; background: white; }
+    .container { padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .product { border: 1px solid #ccc; padding: 15px; border-radius: 10px; background: white; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .product img { width: 100%; max-width: 250px; border-radius: 8px; margin-bottom: 10px; }
     footer { background: #222; color: white; text-align: center; padding: 15px; margin-top: 20px; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Aero Flyy</h1>
+    <h1>Aero Flyy ✈️</h1>
     <p>Loja especializada em aeromodelismo</p>
   </header>
 
@@ -27,20 +28,44 @@
   </nav>
 
   <div class="container">
-    <h2>Produtos em destaque</h2>
-    
+    <!-- Produto 1 -->
     <div class="product">
-      <h3>Kit iluminação
-      ShockLight</h3>
+      <h3>Avião Shock Flyer</h3>
+      <img src="https://i.imgur.com/bjFf93N.jpg" alt="Shock Flyer">
       <p>Modelo leve, ágil e perfeito para manobras.</p>
-      <p><b>R$ 130,00</b></p>
+      <p><b>R$ 799,00</b></p>
     </div>
 
+    <!-- Produto 2 -->
     <div class="product">
-      <h3>Kit de iluminação
-      WingGlow</h3>
-      <p>Kit para aeromodelos glow.</p>
-      <p><b>R$ 300,00</b></p>
+      <h3>Kit de Iluminação LED</h3>
+      <img src="https://i.imgur.com/mDgV5Hw.jpg" alt="Kit Iluminação">
+      <p>Destaque seu aeromodelo à noite com LEDs de alto brilho.</p>
+      <p><b>R$ 149,00</b></p>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="product">
+      <h3>Controle RC Avançado</h3>
+      <img src="https://i.imgur.com/xA1zqVN.jpg" alt="Controle RC">
+      <p>Controle remoto de alta precisão para pilotos exigentes.</p>
+      <p><b>R$ 540,00</b></p>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="product">
+      <h3>Bateria Lipo 2200mAh</h3>
+      <img src="https://i.imgur.com/5YXvnLz.jpg" alt="Bateria Lipo">
+      <p>Mais potência e duração para seus voos.</p>
+      <p><b>R$ 199,00</b></p>
+    </div>
+
+    <!-- Produto 5 -->
+    <div class="product">
+      <h3>Carregador Inteligente</h3>
+      <img src="https://i.imgur.com/LpEb3ZQ.jpg" alt="Carregador Lipo">
+      <p>Carregamento rápido e seguro para baterias de aeromodelo.</p>
+      <p><b>R$ 250,00</b></p>
     </div>
   </div>
 
@@ -48,4 +73,4 @@
     <p>&copy; 2025 Aero Flyy - Todos os direitos reservados.</p>
   </footer>
 </body>
-    </html>
+</html>
